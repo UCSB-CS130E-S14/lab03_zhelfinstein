@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sound Project</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="gibberish_2.0.min.js"></script>
+    <script src="simple-slider.min.js"></script>
+    <script src="player.js"></script>
+    <link rel="stylesheet" type="text/css" href="simple-slider.css" />
+  </head>
+
+  <body onload="init();">
+    <h1>Sound Project</h1>
+    <div><input type="checkbox" name="dur" id="duration" onclick="lengthMode();" disabled>Multiple Durations</input></div>
+    <p><span id="fast" style="padding-left:10px;">Fast</span><span id="slow" style="padding-left:240px;">Slow</span>
+    <input type="text" id="freq"></input>
+    <div id="radioButtons" style="margin-top:20px;">
+      <input type="radio" name="instr" value="sin" onclick="setInstrument(0);">Sinusoidal Wave</input>
+      <input type="radio" name="instr" value="pwm" onclick="setInstrument(1);" checked>PWM</input>
+      <input type="radio" name="instr" value="saw" onclick="setInstrument(2);">Saw Wave</input>
+    </div>
+    <div id="checkBoxes" style="margin-top:20px;">
+      <input type="checkbox" name="mod" id="distortion" onclick="setMods();" checked>Distortion</input>
+      <input type="checkbox" name="mod" id="delay" onclick="setMods();" checked>Delay</input>
+      <input type="checkbox" name="mod" id="ring" onclick="setMods();">Ring Modulation</input>
+      <input type="checkbox" name="mod" id="reverb" onclick="setMods();">Reverb</input>
+      <input type="checkbox" name="mod" id="flanger" onclick="setMods();">Flanger</input>
+      <input type="checkbox" name="mod" id="decimator" onclick="setMods();">Decimator</input>
+    </div>
+    <div id="buttons" style="margin-top:20px;">
+      <button type="button" onclick="play();">Play the sound!</button>
+      <button type="button" onclick="off();">For god's sake turn it off!</button>
+    </div>
+  </body>
+</html>
