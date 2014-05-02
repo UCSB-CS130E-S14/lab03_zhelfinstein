@@ -1,4 +1,4 @@
-lab03_zhelfinstein
-==================
+CS130E-S14-Labs
+===============
 
-lab03 for Zachary Helfinstein
+labs for CS130E-S14
